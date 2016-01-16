@@ -1,0 +1,14 @@
+.tip-content{
+	text-align: center;
+	margin-top: 40px;
+}
+.tip-content img{
+	width: 40px;
+	height: 40px;
+}
+.tip-content a{
+	margin-right: 10px;
+}
+.tip-content h3{
+	margin: 30px 0;
+}

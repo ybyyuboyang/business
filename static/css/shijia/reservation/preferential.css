@@ -1,0 +1,17 @@
+.pre-box{
+	margin-top: 20px;
+}
+.pre-box .driver-text{
+	width: 300px;
+}
+.contacts-box{
+	margin-left: -80px;
+}
+#submit-success .modal-body, #submit-fail .modal-body{
+	text-align: center;
+	margin-top: 20px;
+}
+#submit-success img, #submit-fail img{
+	width: 40px;
+	height: 40px;
+}

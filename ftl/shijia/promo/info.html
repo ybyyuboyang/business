@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>预约优惠</title>
+	<link rel="stylesheet" href="../../../static/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../static/css/lib/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="../../../static/css/shijia/common/nav.css">
+	<link rel="stylesheet" href="../../../static/css/shijia/reservation/preferential.css">
+</head>
+<body>
+
+	<div class="wrap clearfix">
+		<div class="choose-4s">
+            <select class="city" data-value="0"></select>
+			<select class="store-name" data-value="1" ></select>
+		</div>
+		<div class="nav">
+			<div>
+				<h3>发布管理</h3>
+				<ul>
+					<li>试驾发布</li>
+				</ul>
+			</div>
+			<div>
+				<h3>订单管理</h3>
+				<ul>
+					<li>订单中心</li>
+				</ul>
+			</div>
+			<div>
+				<h3>预约管理</h3>
+				<ul>
+					<li class="nav-active">预约优惠</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="bread-crumbs">
+				<span>优惠信息</span>
+			</div>
+			<div class="form-horizontal pre-box">
+				<div class="control-group">
+					<label>1、填写试驾优惠（最多34字）</label>
+					<textarea class="driver-text" rows="3"></textarea>
+				</div>
+				<div class="control-group">
+					<label>2、联系方式</label>
+					<div class="contacts-box">
+						<label class="control-label">手机</label>
+					    <div class="controls">
+							<input type="text" class="mobile">
+					    </div>		
+					</div>
+    			</div>
+			</div>
+			<button class="btn btn-large btn-warning pre-btn" type="button">发布试驾</button>
+		</div>
+	</div>
+	
+	<!-- 提交成功 -->
+	<div id="submit-success" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">优惠信息</h3>
+		</div>
+		<div class="modal-body">
+			<img src="../../../static/img/1.png" alt="">
+			<h3>提交成功</h3>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+		</div>
+	</div>
+
+	<!-- 提交失败 -->
+	<div id="submit-fail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">优惠信息</h3>
+		</div>
+		<div class="modal-body">
+			<img src="../../../static/img/2.jpeg" alt="">
+			<h3>提交失败</h3>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+		</div>
+	</div>
+	<script src="../../../static/js/lib/jquery.min.js"></script>
+	<script src="../../../static/js/lib/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script src="../../../static/js/lib/bootstrap.min.js"></script>
+	<script src="../../../static/js/lib/cxselect.js"></script>
+	<script src="../../../static/js/shijia/reservation/preferential.js"></script>
+</body>
+</html>

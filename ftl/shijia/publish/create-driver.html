@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单查询</title>
+	<link rel="stylesheet" href="../../../static/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../static/css/lib/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="../../../static/css/shijia/common/nav.css">
+	<link rel="stylesheet" href="../../../static/css/shijia/release/create-driver.css">
+</head>
+<body>
+
+	<div class="wrap clearfix">
+		<div class="nav">
+			<div>
+				<h3>发布管理</h3>
+				<ul>
+					<li class="nav-active">试驾发布</li>
+				</ul>
+			</div>
+			<div>
+				<h3>订单管理</h3>
+				<ul>
+					<li>订单中心</li>
+				</ul>
+			</div>
+			<div>
+				<h3>预约管理</h3>
+				<ul>
+					<li>预约优惠</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="bread-crumbs">
+				<a href="javascript:;">试驾发布</a>
+				<span> > 创建试驾</span>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							<label class="checkbox">
+								<input type="checkbox" class="checkAll">
+								<span>序号</span>
+							</label>
+						</th>
+						<th>门店</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<label class="checkbox">
+								<input type="checkbox" name="subBox" data-id="12345">1141351
+							</label>
+						</td>
+						<td>森田4S店</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="checkbox">
+								<input type="checkbox" name="subBox" data-id="234567">1141351
+							</label>
+						</td>
+						<td>森田4S店</td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="btn btn-large btn-warning create-driver" type="button">发布试驾</button>
+		</div>
+	</div>
+	
+	<script src="../../../static/js/lib/jquery.min.js"></script>
+	<script src="../../../static/js/lib/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script src="../../../static/js/shijia/release/create-driver.js"></script>
+</body>
+</html>

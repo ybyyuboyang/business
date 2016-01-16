@@ -1,0 +1,60 @@
+body{
+	font-size: 16px;
+}
+.clearfix{*zoom:1;}
+.clearfix:after { 
+    visibility: hidden; 
+    display: block; 
+    font-size: 0; 
+    content: " "; 
+    clear: both; 
+    height: 0; 
+}
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+	background: #fcfcfc;
+}
+.choose-4s{
+	margin-top: 20px;
+}
+.choose-4s .city{
+	width: 100px;
+}
+.nav{
+	float: left;
+	padding-bottom: 10px;
+	width: 14%;
+}
+.nav h3{
+	font-size: 16px;
+	margin-left: 20px;
+}
+.nav ul{
+	margin: 0;
+	padding: 0;
+}
+.nav ul li{
+	list-style: none;
+	padding: 5px 0;
+	text-align: center;
+}
+.nav .nav-active{
+	background: #ccc;
+}
+.content{
+	float: left;
+	width: 82.5%;
+	padding: 20px 20px 40px 20px;
+	background: #fff;
+}
+.bread-crumbs{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+.table{
+	font-size: 14px;
+}
+.table thead{
+	background: #f4f4f4;
+}

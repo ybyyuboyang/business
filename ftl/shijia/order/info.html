@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单查询</title>
+	<link rel="stylesheet" href="../../../static/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../static/css/lib/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="../../../static/css/shijia/common/nav.css">
+	<link rel="stylesheet" href="../../../static/css/shijia/orderManger/order-manger.css">
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="choose-4s">
+            <select class="city" data-value="0"></select>
+			<select class="store-name" data-value="1" ></select>
+		</div>
+		<div class="nav">
+			<div>
+				<h3>发布管理</h3>
+				<ul>
+					<li>试驾发布</li>
+				</ul>
+			</div>
+			<div>
+				<h3>订单管理</h3>
+				<ul>
+					<li>订单中心</li>
+				</ul>
+			</div>
+			<div>
+				<h3>预约管理</h3>
+				<ul>
+					<li class="nav-active">预约优惠</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="form-horizontal order-search-box">
+				<div class="input-append date" id="start-date">
+				    <input size="16" type="text" readonly>
+				    <span class="add-on"><i class="icon-th"></i></span>
+				</div>
+				<div class="input-append date" id="end-date">
+				    <input size="16" type="text" readonly>
+				    <span class="add-on"><i class="icon-th"></i></span>
+				</div>
+				<span>来源：</span>
+				<select class="shot-select">
+					<option>全部</option>
+				</select>
+				<span>状态：</span>
+				<select class="shot-select">
+					<option>全部</option>
+				</select>
+			</div>
+			<div class="form-horizontal order-search-box">
+				<span>关键字：</span>
+				<select class="shot-select">
+					<option>手机号</option>
+					<option>订单号</option>
+				</select>
+				<input type="text" class="input-medium search-query">
+  				<button type="submit" class="btn">Search</button>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>订单号</th>
+						<th>提交时间</th>
+						<th>手机</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>344820</td>
+						<td>2015-12-16 19:57</td>
+						<td>18741361843</td>
+						<td>
+							<button class="btn btn-success" type="button">已到店</button>
+							<button class="btn btn-warning" type="button">未到店</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script src="../../../static/js/lib/jquery.min.js"></script>
+	<script src="../../../static/js/lib/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script src="../../../static/js/lib/cxselect.js"></script>
+	<script src="../../../static/js/shijia/order/info.js" charset="UTF-8"></script>
+</body>
+</html>
