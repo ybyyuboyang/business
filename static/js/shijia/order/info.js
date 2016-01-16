@@ -29,7 +29,7 @@ $(function(){
 			jsonSub: "sub",
 			url: [
 				{
-					"name":"北京市",
+					"name":"北京市", 
 					"value": 0,
 					'sub':[
 						{	
@@ -41,7 +41,7 @@ $(function(){
 							"value":5
 						}
 
-					]
+					]  
 				},
 				{
 					"name":"上海市",

@@ -50,16 +50,28 @@ $(function() {
 		})
 
 		var params = {
-			'id': arr
+			'shopId': arr
 		};
 
 		$.ajax({
-			url: "/create/driver",
+			url: "/api/shijia/publish/add",
             data: params,
             method: "POST",
 			success: function(result){
-				location.href="/release/success.html"
+				if(result.status == 200){
+					location.href="/release/success.html"
+				}else{
+					location.href="/release/fail.html"
+				}
 			}
 		})
 	}
 });
+
+
+
+
+
+
+
+

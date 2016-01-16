@@ -32,11 +32,11 @@ $(function(){
 
 		$('#del-single .btn-primary').on('click', function(){
 			var params = {
-				'id': driverId
+				'shopId': driverId
 			};
 
 			$.ajax({
-				url: "/del/singledriver",
+				url: "/api/shijia/publish/delete",
 	            data: params,
 	            method: "POST",
 				success: function(result){
@@ -66,11 +66,11 @@ $(function(){
 		})		
 		$('#del-all .btn-primary').on('click', function(){
 			var params = {
-				'id': arr
+				'shopId': arr
 			};
 
 			$.ajax({
-				url: "/del/alldriver",
+				url: "/api/shijia/publish/delete",
 	            data: params,
 	            method: "POST",
 				success: function(result){
